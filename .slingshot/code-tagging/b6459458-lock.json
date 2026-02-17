@@ -1,0 +1,38 @@
+{
+  ".gitignore": {
+    "filename": ".gitignore",
+    "path": ".gitignore",
+    "version": "1.1",
+    "chunks": {
+      "100640": {
+        "user": "Tanmoy Choudhury",
+        "model": "gpt-4.1",
+        "timestamp": 1771303988,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.1.2",
+        "source": "chat",
+        "type": "saveCreateNewFile",
+        "hash": "c703d1a4",
+        "messageId": "system_51f56570-0bbc-11f1-a7aa-85cfcb52fb3d",
+        "codeBlockId": "system_51f56570-0bbc-11f1-a7aa-85cfcb52fb3d-Codeblock-4",
+        "isActive": false
+      },
+      "13837f": {
+        "user": "Tanmoy Choudhury",
+        "model": "gpt-4.1",
+        "timestamp": 1771303921,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.1.2",
+        "source": "chat",
+        "type": "insertCode",
+        "hash": "f2e6562a",
+        "messageId": "system_51f56570-0bbc-11f1-a7aa-85cfcb52fb3d",
+        "codeBlockId": "system_51f56570-0bbc-11f1-a7aa-85cfcb52fb3d-Codeblock-1",
+        "isActive": false
+      }
+    },
+    "lines": {}
+  }
+}

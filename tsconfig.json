@@ -1,0 +1,12 @@
+ // Code generated via "Slingshot" 
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist"
+  },
+  "include": ["tests/**/*.ts"]
+}

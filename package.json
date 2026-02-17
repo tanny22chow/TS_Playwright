@@ -1,0 +1,14 @@
+{
+  "name": "ts-playwright-sample",
+  "version": "1.0.0",
+  "description": "Sample Playwright project with TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.43.1",
+    "typescript": "5.4.5"
+  }
+}
