@@ -11,7 +11,15 @@ jobs:
         with:
           username:  ${{ secrets.BROWSERSTACK_USERNAME }}
           access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-
+      - uses: actions/setup-node@v5
+        with:
+        node-version: lts/*
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
 # The next 3 steps are for building the web application to be tested and starting the web server on the runner environment
 
       - name: 'Checkout the repository'
