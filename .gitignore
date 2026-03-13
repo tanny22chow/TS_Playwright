@@ -1,6 +1,7 @@
 /node_modules
 /.slingshot
 /dist
+/log
 # Logs
 logs
 *.log
