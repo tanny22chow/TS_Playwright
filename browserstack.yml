@@ -1,10 +1,14 @@
-userName: ravindrand_dQv6wj
-accessKey: ZkcKwXKuxLRqskearE35
+userName: placeholder
+accessKey: placeholder
 framework: playwright
 platforms:
   - os: Windows
     osVersion: 11
-    browserName: firefox
+    browserName: chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: edge
     browserVersion: latest
 browserstackLocal: false
 buildName: bstack-demo
