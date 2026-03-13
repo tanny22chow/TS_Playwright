@@ -11,5 +11,5 @@ test('example using browser context', async ({ browser }) => {
   const page = await context.newPage();
   await page.goto('/test');
   await expect(page.locator('h1')).toHaveText('Ready to be a Pro Engineer?');
-  context.close
+  context.close()
 });
