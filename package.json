@@ -6,7 +6,7 @@
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "bstack": "npx browserstack-node-sdk playwright test",
-    "test:report": "playwright show-report"
+    "report": "playwright show-report"
   },
   "devDependencies": {
     "@playwright/test": "1.43.1",
