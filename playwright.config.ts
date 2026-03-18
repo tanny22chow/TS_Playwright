@@ -7,8 +7,9 @@ export default defineConfig({
   retries: 0,
   use: {
     headless: true,
-    baseURL: 'https://letcode.in/',
+    baseURL: 'https://the-internet.herokuapp.com'
   },
+  reporter:'html',
   projects: [
     {
       name: 'Chrome',

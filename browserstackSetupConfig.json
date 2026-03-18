@@ -16,3 +16,12 @@ projectName: playwright-demo project
 debug: false
 networkLogs: false
 consoleLogs: info
+testContextOptions:
+  skipSessionStatus: false
+  skipSessionName: false
+buildIdentifier: '#15'
+logDir: C:\Users\tanmo\Projects\TSRepo\TS_Playwright\log
+browserStackLocalOptions:
+  skipBinaryInitialisation: false
+proxySettings: {}
+accessibility: false

@@ -6,7 +6,10 @@ test.describe('Input Test', () => {
     let context: BrowserContext;
 
     test.beforeAll(async ({ browser }) => {
-        context = await browser.newContext();
+        context = await browser.newContext({
+            baseURL: 'https://letcode.in/',
+            viewport: { width: 1280, height: 720 },
+        });
         page = await context.newPage();
     });
 

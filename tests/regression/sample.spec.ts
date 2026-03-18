@@ -1,7 +1,12 @@
- // Code generated via "Slingshot" 
-import { test, expect } from '@playwright/test';
+// Code generated via "Slingshot" 
+import { test, expect, Page } from '@playwright/test';
 
-test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
+test('homepage has Playwright in title and get started link linking to the intro page', async ({ browser }) => {
+  let page: Page;
+  let context = await browser.newContext({
+    baseURL: 'https://playwright.dev/'
+  })
+  page = await context.newPage();
   await page.goto('/');
   await expect(page).toHaveTitle(/Playwright/);
 
