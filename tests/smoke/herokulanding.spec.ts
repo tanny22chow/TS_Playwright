@@ -3,9 +3,10 @@ import { LandingPage } from '../PageObjects/LandingPage';
 
 test.describe('Heroku Landing Page', () => {
     let landingPage: LandingPage;
+    let page: Page;
     test.beforeEach(async ({ page }) => {
         landingPage = new LandingPage(page);
-        await page.goto('https://the-internet.herokuapp.com/');
+        await page.goto('/');
     });
 
     test('should have the correct title', async ({ page }) => {

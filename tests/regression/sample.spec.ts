@@ -4,7 +4,7 @@ import { test, expect, Page } from '@playwright/test';
 test('homepage has Playwright in title and get started link linking to the intro page', async ({ browser }) => {
   let page: Page;
   let context = await browser.newContext({
-    baseURL: 'https://playwright.dev/'
+    baseURL: 'https://playwright.dev'
   })
   page = await context.newPage();
   await page.goto('/');

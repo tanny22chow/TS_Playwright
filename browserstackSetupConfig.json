@@ -19,7 +19,7 @@ consoleLogs: info
 testContextOptions:
   skipSessionStatus: false
   skipSessionName: false
-buildIdentifier: '#15'
+buildIdentifier: '#17'
 logDir: C:\Users\tanmo\Projects\TSRepo\TS_Playwright\log
 browserStackLocalOptions:
   skipBinaryInitialisation: false
