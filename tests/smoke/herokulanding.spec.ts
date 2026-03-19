@@ -1,5 +1,6 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect, Page, Locator } from '@playwright/test';
 import { LandingPage } from '../PageObjects/LandingPage';
+
 
 test.describe('Heroku Landing Page', () => {
     let landingPage: LandingPage;
@@ -8,11 +9,18 @@ test.describe('Heroku Landing Page', () => {
         landingPage = new LandingPage(page);
         await page.goto('/');
     });
+    test.use({
+            httpCredentials: {
+                username: 'admin',
+                password: 'admin'
+            }
+        })
 
     test('should have the correct title', async ({ page }) => {
         await expect(page).toHaveTitle('The Internet');
     });
     test('should have all the expected links', async ({page}) => {
+        await page.waitForLoadState('networkidle');
         await expect(landingPage.abTestingLink).toBeEnabled();
         await landingPage.abTestingLink.click();
         await expect(page).toHaveURL('https://the-internet.herokuapp.com/abtest');
@@ -111,5 +119,31 @@ test.describe('Heroku Landing Page', () => {
         await page.goBack();
         // Add assertions for other links as needed
     });
+    
+    test('check auth links', async ({ page }) => {
+        await landingPage.clickBasicAuthLink();
+        await expect(page).toHaveURL('https://the-internet.herokuapp.com/basic_auth');
+        await expect(page.locator('p')).toHaveText('Congratulations! You must have the proper credentials.');
+        await page.goBack();
+    
+    })
+    test('check broken images', async ({ page }) => {
+        await landingPage.clickBrokenImagesLink();
+        await expect(page).toHaveURL('https://the-internet.herokuapp.com/broken_images');
+        await page.waitForLoadState('networkidle');
 
-});
+        const images : Locator[] = await page.locator('div > div >img').all();
+        const srcvalues = await Promise.all(images.map(img => img.getAttribute('src')));
+        const invalid=[];
+        for (const src of srcvalues) {
+            const baseUrl= await page.evaluate(() => window.location.origin);
+            const resp=await page.request.get(baseUrl +'/'+ src);
+            if (resp.status() !== 200) {
+                invalid.push(src);
+            }
+            }
+            expect(invalid.length).toBe(2);
+
+        }
+    );
+})
