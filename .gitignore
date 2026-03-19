@@ -2,6 +2,8 @@
 /.slingshot
 /dist
 /log
+/playwright-report
+/test-results
 # Logs
 logs
 *.log
