@@ -285,4 +285,62 @@ test.describe('Heroku Landing Page', () => {
         expect(path).not.toBeNull();
     })
 
+    test('drag and drop check', async ({ page }) => {
+        await landingPage.clickDragAndDropLink();
+        await page.waitForLoadState('networkidle');
+        const source = page.locator('#column-a');
+        const target = page.locator('#column-b');
+        const sourceTextBefore = await source.textContent();
+        const targetTextBefore = await target.textContent();
+        await source.dragTo(target);
+        const sourceTextAfter = await source.textContent();
+        const targetTextAfter = await target.textContent();
+        expect(sourceTextAfter).toContain(targetTextBefore);
+        expect(targetTextAfter).toContain(sourceTextBefore);
+    })
+
+    test('Manual drag and drop check', async ({ page }) => {
+        await landingPage.clickDragAndDropLink();
+        await page.waitForLoadState('networkidle');
+        const source = page.locator('#column-a');
+        await source.hover();
+        await page.mouse.down();
+        const target = page.locator('#column-b');
+        await target.hover();
+        await page.mouse.up();
+        expect(source.textContent()).toContain('B');
+        expect(target.textContent()).toContain('A');
+       
+    })
+    test('Scrolling check', async ({ page }) => {
+        await page.getByText('Elemental Selenium').scrollIntoViewIfNeeded();
+        await expect(page.getByText('Elemental Selenium')).toBeInViewport();
+        const newpagePromise=page.waitForEvent('popup');
+        await page.getByText('Elemental Selenium').click();
+        const elementalPage=await newpagePromise;
+        await elementalPage.waitForLoadState('networkidle');
+        await expect(elementalPage).toHaveURL('http://elementalselenium.com/');
+    })
+    test('Secure file download check', async ({ page, context }) => {
+        await landingPage.clickSecureFileDownloadLink();
+        await page.waitForLoadState('networkidle');
+        test.use({
+            httpCredentials: {
+                username: 'admin',
+                password: 'admin'
+            }
+        })
+        let  downloadpath='';
+        page.on('download', async (download) => {
+            downloadpath = await download.path();
+        })
+        await page.locator('a:has-text("testfile.txt")').click();
+        expect(downloadpath).not.toBeNull();
+    })
+    test('shadow dom check', async ({ page }) => {
+        await landingPage.clickShadowDomLink();
+        await page.waitForLoadState('networkidle');
+        expect(await page.getByRole('listitem').filter({ hasText: 'In a list' })).toBeVisible();
+    })
+
 })
