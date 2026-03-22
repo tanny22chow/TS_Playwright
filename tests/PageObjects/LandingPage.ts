@@ -68,7 +68,7 @@ export class LandingPage {
     this. dynamicLoadingLink = this.page.locator('text=Dynamic Loading');
     this. entryAdLink = this.page.locator('text=Entry Ad');
     this. exitIntentLink = this.page.locator('text=Exit Intent');
-    this. fileDownloadLink = this.page.locator('text=File Download');
+    this. fileDownloadLink = this.page.locator("a[href=\"/download\"]");
     this. fileUploadLink = this.page.locator('text=File Upload');
     this. floatingMenuLink = this.page.locator('text=Floating Menu');
     this. forgotPasswordLink = this.page.locator('text=Forgot Password');

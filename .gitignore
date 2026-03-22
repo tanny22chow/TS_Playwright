@@ -4,6 +4,9 @@
 /log
 /playwright-report
 /test-results
+/browserstackSetupConfig.json
+/playwright-browserstack-sdk.config.ts
+/playwright-browserstack-sdk.config.temp.json
 # Logs
 logs
 *.log
