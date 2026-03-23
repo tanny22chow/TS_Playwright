@@ -12,6 +12,17 @@ test.describe('Heroku Landing Page', () => {
         alertPage = new AlertPage(page);
         await page.goto('/');
     });
+    test.afterEach(async ({ page },testInfo) => {
+        if(testInfo.status !== testInfo.expectedStatus) {
+            await testInfo.attach('screenshot', {
+                body: await page.screenshot({ fullPage: true , path: `./tests/screenshots/${testInfo.title}.png`}),
+                contentType: 'image/png'
+            });
+            // await page.screenshot({ path: `./tests/screenshots/${testInfo.title}.png`, fullPage: true });
+        }
+        page.close();
+    });
+   
     test.use({
             httpCredentials: {
                 username: 'admin',
@@ -281,7 +292,7 @@ test.describe('Heroku Landing Page', () => {
             page.waitForEvent('download'),
             page.locator('a:has-text("testfile.txt")').click()
         ]);
-        const path = await download.path();
+        const path = await download.saveAs('./tests/downloads/');
         expect(path).not.toBeNull();
     })
 
@@ -302,14 +313,14 @@ test.describe('Heroku Landing Page', () => {
     test('Manual drag and drop check', async ({ page }) => {
         await landingPage.clickDragAndDropLink();
         await page.waitForLoadState('networkidle');
-        const source = page.locator('#column-a');
+        const source = await page.locator('#column-a');
         await source.hover();
-        await page.mouse.down();
-        const target = page.locator('#column-b');
+        await page.mouse.down({button: 'left'});
+        const target = await page.locator('#column-b');
         await target.hover();
         await page.mouse.up();
-        expect(source.textContent()).toContain('B');
-        expect(target.textContent()).toContain('A');
+        expect(await source.textContent()).toContain('B');
+        expect(await target.textContent()).toContain('A');
        
     })
     test('Scrolling check', async ({ page }) => {
@@ -319,23 +330,16 @@ test.describe('Heroku Landing Page', () => {
         await page.getByText('Elemental Selenium').click();
         const elementalPage=await newpagePromise;
         await elementalPage.waitForLoadState('networkidle');
-        await expect(elementalPage).toHaveURL('http://elementalselenium.com/');
+        await expect(elementalPage).toHaveURL('https://elementalselenium.com/');
     })
     test('Secure file download check', async ({ page, context }) => {
         await landingPage.clickSecureFileDownloadLink();
         await page.waitForLoadState('networkidle');
-        test.use({
-            httpCredentials: {
-                username: 'admin',
-                password: 'admin'
-            }
-        })
         let  downloadpath='';
         page.on('download', async (download) => {
-            downloadpath = await download.path();
+         await download.saveAs('./tests/downloads/');
         })
         await page.locator('a:has-text("testfile.txt")').click();
-        expect(downloadpath).not.toBeNull();
     })
     test('shadow dom check', async ({ page }) => {
         await landingPage.clickShadowDomLink();

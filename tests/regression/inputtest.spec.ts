@@ -16,7 +16,6 @@ test.describe('Input Test', () => {
     test('Input Test', async () => {
         await page.goto('/test');
         expect(await page.title()).toBe('Workspace | LetCode with Koushik');
-        await context.close();
     });
     test.afterAll(async () => {
         await context.close();

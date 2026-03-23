@@ -12,5 +12,8 @@
     "@playwright/test": "1.43.1",
     "browserstack-node-sdk": "^1.50.2",
     "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
   }
 }
