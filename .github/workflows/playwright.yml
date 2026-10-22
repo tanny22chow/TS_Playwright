@@ -1,0 +1,27 @@
+name: Playwright_Ts Test
+
+on:
+  push:
+    branches: [ main, master ]
+    
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.52.0-jammy
+      options: --user root
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Playwright tests
+      run: npx playwright test
