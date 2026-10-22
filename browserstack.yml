@@ -11,6 +11,7 @@ platforms:
     browserName: edge
     browserVersion: latest
 browserstackLocal: false
+parallelsPerPlatform: 8
 buildName: bstack-demo
 projectName: playwright-demo project
 debug: false

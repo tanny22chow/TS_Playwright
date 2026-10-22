@@ -18,8 +18,7 @@ export default defineConfig({
     baseURL: 'https://the-internet.herokuapp.com',
   },
   reporter: [
-   ['html'],
-   ['@testdino/playwright', { token: process.env.TESTDINO_TOKEN}],
+   ['html']
  ],
   projects: [
     {

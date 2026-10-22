@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Sample Playwright project with TypeScript",
   "scripts": {
-    "test": "playwright test",
+    "clean": "rm -rf test-results && rm -rf playwright-report && rm -rf log && rm -rf tests/screenshots && rm -rf tests/videos",
+    "test": "npm run clean && npx playwright test",
     "test:headed": "playwright test --headed",
-    "bstack": "npx browserstack-node-sdk playwright test",
+    "bstack": "npm run clean && npx browserstack-node-sdk playwright test",
+    "testdino":"npm run clean && npx playwright test --config=playwright.testdino.config.ts",
     "report": "playwright show-report"
   },
   "dependencies": {
