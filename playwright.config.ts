@@ -1,14 +1,14 @@
  // Code generated via "Slingshot" 
 import { defineConfig, devices } from '@playwright/test';
 import os from 'os';
-// import  dotenv from 'dotenv';
-// import path from 'path';
+import  dotenv from 'dotenv';
+import path from 'path';
 
 // const testEnv = process.env.TEST_ENV || 'dev'; // Default to 'development' if not specified
-// dotenv.config({ path: path.resolve(`./Environments/.env.${testEnv}`) });
+ dotenv.config({ path: path.resolve('./.env') });
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/heroku/smoke',
   timeout: 30000,
   retries: 0,
   workers: os.cpus().length,
@@ -17,7 +17,10 @@ export default defineConfig({
     headless: true,
     baseURL: 'https://the-internet.herokuapp.com',
   },
-  reporter:'html',
+  reporter: [
+   ['html'],
+   ['@testdino/playwright', { token: process.env.TESTDINO_TOKEN}],
+ ],
   projects: [
     {
       name: 'Chrome',

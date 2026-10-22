@@ -2,13 +2,14 @@
 /.slingshot
 /dist
 /log
+/.idea
 /playwright-report
 /test-results
 /browserstackSetupConfig.json
 /playwright-browserstack-sdk.config.ts
 /playwright-browserstack-sdk.config.temp.json
 /tests/downloads
-/tests/screenshots
+/tests/heroku/screenshots
 /tests/videos   
 
 # Logs

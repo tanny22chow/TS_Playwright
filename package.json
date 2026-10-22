@@ -8,12 +8,14 @@
     "bstack": "npx browserstack-node-sdk playwright test",
     "report": "playwright show-report"
   },
-  "devDependencies": {
-    "@playwright/test": "1.43.1",
+  "dependencies": {
+    "@playwright/test": "1.52.0",
     "browserstack-node-sdk": "^1.50.2",
+    "dotenv": "^17.3.1",
     "typescript": "5.4.5"
   },
-  "dependencies": {
-    "dotenv": "^17.3.1"
+  "devDependencies": {
+    "dotenv": "^17.3.1",
+    "@testdino/playwright": "^2.10.1"
   }
 }
