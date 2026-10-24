@@ -19,8 +19,8 @@ export default defineConfig({
    baseURL: process.env.BASE_URL
   },
   reporter: [
-   ['html']
-   //['@testdino/playwright', { token: process.env.TESTDINO_TOKEN}]
+   ['dot'],
+   ['@testdino/playwright', { token: process.env.TESTDINO_TOKEN}]
  ],
   projects: [
     {

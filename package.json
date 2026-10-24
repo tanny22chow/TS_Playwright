@@ -8,7 +8,8 @@
     "test:headed": "npm run clean && npx playwright test --headed",
     "bstack": "npm run clean && npx browserstack-node-sdk playwright test",
     "testdino": "npm run clean && npx playwright test --config=playwright.testdino.config.ts",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "debug": "npx playwright test --headed"
   },
   "dependencies": {
     "@playwright/test": "1.52.0",

@@ -9,14 +9,14 @@ import process from 'process';
  dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
-  testDir: './tests/heroku/smoke',
+  testDir: './tests/eventhubapp/spec',
   timeout: 30000,
   retries: 0,
   workers: os.cpus().length,
   fullyParallel: true,
   use: {
     headless: true,
-    baseURL: 'https://the-internet.herokuapp.com',
+    baseURL: process.env.BASE_URL
   },
   reporter: [
    ['@testdino/playwright', { token: process.env.TESTDINO_TOKEN}]
