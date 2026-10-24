@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 import os from 'os';
 import  dotenv from 'dotenv';
 import path from 'path';
+ import process from "process";
 
 // const testEnv = process.env.TEST_ENV || 'dev'; // Default to 'development' if not specified
  dotenv.config({ path: path.resolve(__dirname, '.env') });
