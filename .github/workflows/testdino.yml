@@ -24,4 +24,4 @@ jobs:
       run: npm ci
 
     - name: Run Playwright tests
-      run: npm run clean && npx playwright test --config=playwright.testdino.config.ts
+      run: npm run testdino

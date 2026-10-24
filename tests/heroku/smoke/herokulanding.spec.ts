@@ -1,12 +1,16 @@
 import { test, expect, Page, Locator } from '@playwright/test';
 import { LandingPage } from '../PageObjects/LandingPage';
 import { AlertPage } from '../PageObjects/AlertPage';
+import process from 'process';
 
 
 test.describe('Heroku Landing Page', () => {
     let landingPage: LandingPage;
     let alertPage: AlertPage;
     let page: Page;
+    test.beforeAll(async ({ browser }) => {
+        console.log(process.env.TESTDINO_TOKEN);
+    });
     test.beforeEach(async ({ page }) => {
         landingPage = new LandingPage(page);
         alertPage = new AlertPage(page);

@@ -5,19 +5,20 @@
   "scripts": {
     "clean": "rm -rf test-results && rm -rf playwright-report && rm -rf log && rm -rf tests/screenshots && rm -rf tests/videos",
     "test": "npm run clean && npx playwright test",
-    "test:headed": "playwright test --headed",
+    "test:headed": "npm run clean && npx playwright test --headed",
     "bstack": "npm run clean && npx browserstack-node-sdk playwright test",
-    "testdino":"npm run clean && npx playwright test --config=playwright.testdino.config.ts",
+    "testdino": "npm run clean && npx playwright test --config=playwright.testdino.config.ts",
     "report": "playwright show-report"
   },
   "dependencies": {
     "@playwright/test": "1.52.0",
-    "browserstack-node-sdk": "^1.50.2",
+    "browserstack-node-sdk": "^1.74.0",
     "dotenv": "^17.3.1",
     "typescript": "5.4.5"
   },
   "devDependencies": {
-    "dotenv": "^17.3.1",
-    "@testdino/playwright": "^2.10.1"
+    "@testdino/playwright": "^2.10.2",
+    "@types/node": "^26.6.5",
+    "dotenv": "^17.3.1"
   }
 }
