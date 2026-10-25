@@ -1,0 +1,571 @@
+[
+ {
+  "time": 1792863815548,
+  "duration": 25717.023999999998,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    18812
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    3728
+   ]
+  }
+ },
+ {
+  "time": 1792863984143,
+  "duration": 14374.974,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    6733
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    4336
+   ]
+  }
+ },
+ {
+  "time": 1792864203261,
+  "duration": 12864.685,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    6474
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    3656
+   ]
+  }
+ },
+ {
+  "time": 1792864566144,
+  "duration": 12486.443,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    6635
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    3188
+   ]
+  }
+ },
+ {
+  "time": 1792864685160,
+  "duration": 12902.962,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    6507
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    3687
+   ]
+  }
+ },
+ {
+  "time": 1792864846170,
+  "duration": 20899.516,
+  "passed": 4,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    6015
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    3671
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Logging with valid credentials": [
+    "p",
+    4936
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › del events": [
+    "p",
+    3472
+   ]
+  }
+ },
+ {
+  "time": 1792902012001,
+  "duration": 13051.333999999999,
+  "passed": 4,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    3116
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    2720
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Logging with valid credentials": [
+    "p",
+    3016
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › del events": [
+    "p",
+    2292
+   ]
+  }
+ },
+ {
+  "time": 1792902069049,
+  "duration": 9918.401,
+  "passed": 3,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Login with valid credentials": [
+    "p",
+    3072
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    2326
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Logging with valid credentials": [
+    "p",
+    2809
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › del events": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1792902121924,
+  "duration": 4448.411,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › delete events": [
+    "p",
+    2598
+   ]
+  }
+ },
+ {
+  "time": 1792917592643,
+  "duration": 55.528999999999996,
+  "passed": 0,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 0,
+  "tests": {}
+ },
+ {
+  "time": 1792917703098,
+  "duration": 62582.734,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "f",
+    30011
+   ]
+  }
+ },
+ {
+  "time": 1792917787347,
+  "duration": 62794.124,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "f",
+    30015
+   ]
+  }
+ },
+ {
+  "time": 1792917910597,
+  "duration": 130461.53300000001,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "f",
+    30015
+   ]
+  }
+ },
+ {
+  "time": 1792918152528,
+  "duration": 70573.19200000001,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "p",
+    65687
+   ]
+  }
+ },
+ {
+  "time": 1792918849275,
+  "duration": 6703.312,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "p",
+    3949
+   ]
+  }
+ },
+ {
+  "time": 1792919114603,
+  "duration": 6632.476000000001,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "p",
+    3981
+   ]
+  }
+ },
+ {
+  "time": 1792919276780,
+  "duration": 6737.358,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "p",
+    4025
+   ]
+  }
+ },
+ {
+  "time": 1792919377393,
+  "duration": 6625.108,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › create events": [
+    "p",
+    3938
+   ]
+  }
+ },
+ {
+  "time": 1792931881099,
+  "duration": 14749.282,
+  "passed": 4,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    4280
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    2786
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "p",
+    6102
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "p",
+    4082
+   ]
+  }
+ },
+ {
+  "time": 1792931990290,
+  "duration": 15248.851,
+  "passed": 4,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    4853
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    2991
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "p",
+    6426
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "p",
+    4127
+   ]
+  }
+ },
+ {
+  "time": 1792932244004,
+  "duration": 75452.101,
+  "passed": 3,
+  "failed": 3,
+  "flaky": 0,
+  "skipped": 2,
+  "total": 8,
+  "tests": {
+   "chrome-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    16934
+   ],
+   "chrome-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    12940
+   ],
+   "chrome-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "f",
+    17047
+   ],
+   "chrome-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "s",
+    0
+   ],
+   "edge-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    19444
+   ],
+   "edge-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "f",
+    40102
+   ],
+   "edge-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "f",
+    16691
+   ],
+   "edge-latest:Windows 11-browserstack::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1792932453265,
+  "duration": 34478.403000000006,
+  "passed": 4,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    22107
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    4554
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "p",
+    23249
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "p",
+    5775
+   ]
+  }
+ },
+ {
+  "time": 1792932574795,
+  "duration": 177074.61,
+  "passed": 7,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 8,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    11130
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    5180
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "p",
+    12499
+   ],
+   "Chrome::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "p",
+    6532
+   ],
+   "Edge::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › Login with valid credentials": [
+    "p",
+    11039
+   ],
+   "Edge::tests/eventhubapp/spec/login.spec.ts::Login › Event management app login › delete events": [
+    "p",
+    5225
+   ],
+   "Edge::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › create events": [
+    "p",
+    12447
+   ],
+   "Edge::tests/eventhubapp/spec/login.spec.ts::Login › data driven event manage › delete events": [
+    "f",
+    155620
+   ]
+  }
+ },
+ {
+  "time": 1792950536103,
+  "duration": 8580.107,
+  "passed": 8,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 8,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    361
+   ],
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › post call": [
+    "p",
+    22
+   ],
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › put call": [
+    "p",
+    22
+   ],
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › delete call": [
+    "p",
+    20
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    343
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › post call": [
+    "p",
+    25
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › put call": [
+    "p",
+    19
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › delete call": [
+    "p",
+    12
+   ]
+  }
+ },
+ {
+  "time": 1792950640617,
+  "duration": 2819.555,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    327
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    326
+   ]
+  }
+ },
+ {
+  "time": 1792950667472,
+  "duration": 2780.911,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "Chrome::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    313
+   ],
+   "Edge::tests/eventhubapp/spec/api.spec.ts::Api test suite › Get call": [
+    "p",
+    312
+   ]
+  }
+ }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "eventName": "Music Event",
+    "category": "Concert",
+    "city": "New York",
+    "venue": "Madison Square Garden",
+    "price": "50",
+    "eventDate": "2026-10-31T15:22",
+    "totalseats": "100"
+  },
+  {
+    "eventName": "Mega Event",
+    "category": "Sports",
+    "city": "Durban",
+    "venue": "Bourn aven Stadium",
+    "price": "50",
+    "eventDate": "2026-10-31T15:22",
+    "totalseats": "1000"
+  },
+  {
+    "eventName": "Arijit nights",
+    "category": "Concert",
+    "city": "Pune",
+    "venue": "ISB groud",
+    "price": "500",
+    "eventDate": "2026-10-31T15:22",
+    "totalseats": "5000"
+  }
+
+]

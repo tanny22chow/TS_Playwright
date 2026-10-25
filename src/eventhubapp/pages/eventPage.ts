@@ -57,7 +57,7 @@ import {Page, Locator} from '@playwright/test';
         
     }
     public async deleteEventByName(eventName: string): Promise<void> {
-        await this.page.getByRole('row', { name: 'Music Event Concert New York' }).getByTestId('delete-event-btn').click();
+        await this.page.getByRole('row', { name: `${eventName}` }).getByTestId('delete-event-btn').click();
         await this.page.getByTestId('confirm-dialog-yes').click();
     }
 
@@ -90,4 +90,4 @@ import {Page, Locator} from '@playwright/test';
     
    
 }
-export { EventPage, createNewEventPage };
+export { EventPage, createNewEventPage , updateEventDetails};

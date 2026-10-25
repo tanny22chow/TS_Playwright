@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Lenovo pc",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "Intel Core i9",
+      "Hard disk size": "512 GB"
+    }
+  },
+  {
+    "name": "Apple MacBook Pro 15",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "M3",
+      "Hard disk size": "1 TB"
+    }
+  },
+  {
+    "name": "Google desktop",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "AMD Ryzen",
+      "Hard disk size": "1 TB"
+    }
+  }
+]
